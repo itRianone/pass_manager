@@ -1,0 +1,7 @@
+{% extends "conf.html" %}
+{% block content %}
+  <form class="form" method="POST" action="http://localhost:5000/generator">
+    <input name="generator__item-input" class="generator__item generator__item-input" type="input" value="" placeholder="how much passwords add?" autocomplete="off">
+    <input class="generator__item generator__item-submit" type="submit" value="submit" >
+  </form>
+{% endblock %}

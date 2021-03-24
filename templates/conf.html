@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/normalize.css') }}">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% if title %}
+    <title>{{ title }} | Godly PM</title>
+  {% else %}
+    <title>Godly PM</title>
+  {% endif %}
+</head>
+<body>
+
+  <header class="header">
+    <div class="nav">
+      <a href="/" class="nav__item">Home</a>
+      <a href="/add_pass" class="nav__item">Add password</a>
+      <a href="/view_all" class="nav__item">View all</a>
+      <a href="/clear" class="nav__item">Clean all passwords</a>
+      <a href="/generator" class="nav__item">Pass generator</a>
+    </div>
+  </header>
+  {% block content %}{% endblock %}
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  
+</body>
+</html>

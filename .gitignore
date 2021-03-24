@@ -1,0 +1,10 @@
+__pycache__
+.vscode
+env
+migrations
+static/images/*
+!static/images/favicon.ico
+!static/images/lgbt_steam.jpg
+templates/masterkey.html
+.env
+password_manager.sqlite3
